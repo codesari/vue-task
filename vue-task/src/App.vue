@@ -13,6 +13,7 @@ import HomePage from './views/HomePage.vue';
 </template>
 
 <style scoped>
+@import '@/assets/main.css'
 
 
 </style>

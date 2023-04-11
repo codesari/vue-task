@@ -33,6 +33,9 @@ module.exports = {
         288: '288px',
         297: '297px',
         42: '-42px'
+      },
+      boxShadow: {
+        'spec': '0px 0px 48px rgba(85, 85, 85, 0.25)'
       }
     }
   },
