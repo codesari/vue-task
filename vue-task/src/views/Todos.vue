@@ -3,7 +3,7 @@
 
     <!-- Left Menu  -->
     <div class="w-260 h-1024">
-      <DetailMenu/>
+      <TodosMenu/>
     </div>
     <!-- Right  Content -->
     <div class="w-[1180px] h-1024 ">
@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-import DetailMenu from '../components/left-menu/DetailMenu.vue'
+import TodosMenu from '../components/left-menu/TodosMenu.vue'
 import GoHome from '../components/GoHome.vue';
 </script>
 

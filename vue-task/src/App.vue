@@ -2,13 +2,15 @@
 // import { RouterLink, RouterView } from 'vue-router'
 import HomePage from './views/HomePage.vue';
 import Todos from './views/Todos.vue';
+import Posts from './views/Posts.vue';
 
 </script>
 
 <template>
   
 <!-- <HomePage/> -->
-<Todos/>
+<!-- <Todos/> -->
+<Posts/>
 
  
   <!-- <RouterView /> -->
