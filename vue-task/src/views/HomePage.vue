@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex w-1440 h-1024 bg-white">
     <div class="w-260 h-1024">
-      <LeftMenuUsers />
+      <UsersMenu />
     </div>
 
     <!-- Right Content -->
@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-import LeftMenuUsers from '../components/LeftMenuUsers.vue'
+import UsersMenu from '../components/left-menu/UsersMenu.vue';
 import Card from '../components/Card.vue'
 </script>
 

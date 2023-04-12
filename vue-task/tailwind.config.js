@@ -35,7 +35,7 @@ module.exports = {
         42: '-42px'
       },
       boxShadow: {
-        'spec': '0px 0px 48px rgba(85, 85, 85, 0.25)'
+        spec: '0px 0px 48px rgba(85, 85, 85, 0.25)'
       }
     }
   },
