@@ -1,5 +1,6 @@
 <template>
     <!-- Card  -->
+    <!-- navigate yap -->
     <div class="flex items-start py-[20px] px-[24px] gap-[10px] w-358 h-370 bg-white border border-solid border-border rounded-xl  hover:shadow-spec">
         <div class="flex flex-col items-start gap-8 w-310 h-330">
             <div class="relative w-310 h-100">

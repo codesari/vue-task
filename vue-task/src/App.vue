@@ -1,19 +1,15 @@
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
-import HomePage from './views/HomePage.vue';
-import Todos from './views/Todos.vue';
-import Posts from './views/Posts.vue';
+import { RouterLink, RouterView } from 'vue-router'
+
 
 </script>
 
 <template>
-  
-<!-- <HomePage/> -->
-<!-- <Todos/> -->
-<Posts/>
+<RouterLink to="/">Home</RouterLink>
+<RouterLink to="/todos">Todos</RouterLink>
+<RouterLink to="/posts">Posts</RouterLink>
 
- 
-  <!-- <RouterView /> -->
+  <RouterView />
 </template>
 
 <style scoped>
