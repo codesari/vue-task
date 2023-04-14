@@ -3,21 +3,21 @@
 
     <!-- Left Menu  -->
     <div class="w-260 h-1024">
-      <TodosMenu/>
+      <TodosMenu :user="user"/>
     </div>
     <!-- Right  Content -->
     <div class="w-[1180px] h-1024 ">
         <GoHome/>
         <div id="todos" class="flex flex-col items-start absolute left-[296px] top-[156px]">
             <div class="w-[653px] h-[48px] flex items-center">
-                <input type="checkbox" name="" id="checkbox1" class="w-[18px] h-[18px] accent-primary ">
+                <input type="checkbox" name="" id="1" :checked="completed" class="w-[18px] h-[18px] accent-primary ">
             <label for="checkbox1" class="font-normal text-sm leading-5 text-gray2 ml-4  ">Lorem ipsum dolor sit amet consectetur adipisicing.</label>
             
             </div>
             <div class="w-[653px] h-[48px] flex items-center">
-                <input  type="checkbox" name="" id="checkbox1" class="w-[18px] h-[18px] accent-primary ">
+                <input  type="checkbox" name="" id="2" class="w-[18px] h-[18px] accent-primary ">
             <label for="checkbox1" class="font-normal text-sm leading-5 text-gray2 ml-4  ">Lorem ipsum dolor sit amet consectetur adipisicing.</label>
-            
+               
             </div>
             
             
@@ -30,8 +30,20 @@
 </template>
 
 <script setup>
+
 import TodosMenu from '../components/left-menu/TodosMenu.vue'
 import GoHome from '../components/GoHome.vue';
+import users from '../data/users'
+
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const user = users.find(user => user.id === Number(route.params.id))
+
+
+const {completed} =user.todos[0]
+// console.log(completed);
+
 </script>
 
 <style  scoped>

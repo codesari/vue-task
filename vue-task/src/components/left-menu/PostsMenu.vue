@@ -22,15 +22,15 @@
         </div>
         <div class="flex flex-col items-start gap-6 absolute w-[260px] h-[168px] top-[150px]">
         <ItemDeactive>
-          <template #title>Todos</template>
+          <template #title><RouterLink :to="{ name: 'todos-detail' }">Todos</RouterLink></template>
           <template #icon><img src="@/assets/icons/checkup-list.svg" alt="Icon" /></template>
         </ItemDeactive>
         <ItemActive>
-          <template #title>Posts</template>
+          <template #title><RouterLink :to="{ name: 'posts-detail' }">Posts</RouterLink></template>
           <template #icon><img src="@/assets/icons/notebook.svg" alt="Icon" /></template>
         </ItemActive>
         <ItemDeactive>
-          <template #title>Albums</template>
+          <template #title><RouterLink :to="{ name: 'albums-detail' }">Albums</RouterLink></template>
           <template #icon><img src="@/assets/icons/photo-heart.svg" alt="Icon" /></template>
         </ItemDeactive>
         

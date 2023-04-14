@@ -11,17 +11,13 @@
       >
         All users
       </p>
-      <div class="flex flex-wrap gap-4 w-[1124px] max-h-[896px] pt-3 pl-3 absolute left-[288px] top-[100px] overflow-hidden">
+      <div class="flex flex-wrap gap-4 w-[1124px] max-h-[896px] pt-3 pl-3 absolute left-[288px] top-[100px]">
         
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        
+        <Card v-for="user in users" :key="user.id" :user="user" /> 
+        
+        
+        
         
         
         
@@ -34,6 +30,8 @@
 <script setup>
 import UsersMenu from '../components/left-menu/UsersMenu.vue';
 import Card from '../components/Card.vue'
+import users from '../data/users'
+console.log(users);
 </script>
 
 <style lang="scss" scoped></style>
