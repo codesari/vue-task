@@ -37,8 +37,11 @@ const users = [
     todos: [
       {
         id: 1,
-        title: 'Buy groceries',
         completed: true
+      },
+      {
+        id: 2,
+        completed: false
       }
     ]
   },
@@ -123,7 +126,6 @@ const users = [
     todos: [
       {
         id: 1,
-        title: 'Buy groceries',
         completed: false
       }
     ]

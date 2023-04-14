@@ -34,7 +34,7 @@
           <template #icon><img src="@/assets/icons/photo-heart.svg" alt="Icon" /></template>
           
         </ItemDeactive>
-        <p class="ml-4">{{ user.avatar }}</p>
+        
         
         
         </div>
