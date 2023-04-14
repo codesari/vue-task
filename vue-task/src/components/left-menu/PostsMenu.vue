@@ -8,11 +8,11 @@
             <div class="w-[211px] h-[48px]">
                 <div class="w-[159px] h-[48px]">
                     <div class="absolute w-[48px] h-[48px] bg-white rounded-full overflow-hidden">
-                    <div class="absolute w-[95px] h-[63px] -left-[47px] top-0 bg-[url('@/assets/images/pretty-small.png')]"></div>
+                  <img :src="user.avatar" alt="" class="w-full h-full object-cover">
                 </div>
                 <div class="flex flex-col absolute left-[52px]">
-                    <p class="text-title font-medium text-lg leading-7">Jane Doe</p>
-                    <p class=" text-subtitle font-light text-sm leading-[14px] underline ">jane@lorem.com </p>
+                    <p class="text-title font-medium text-lg leading-7">{{ user.name }}</p>
+                    <p class=" text-subtitle font-light text-sm leading-[14px] underline ">{{ user.email }} </p>
                 </div>
                 
                 </div>
@@ -56,4 +56,11 @@
 <script setup>
 import ItemActive from './ItemActive.vue';
 import ItemDeactive from './ItemDeactive.vue';
+
+const props = defineProps({
+  user: {
+    type: Object,
+    required: true
+  }
+})
 </script>

@@ -3,7 +3,7 @@
 
     <!-- Left Menu  -->
     <div class="w-260 h-1024">
-      <PostsMenu />
+      <PostsMenu :user="user"/>
     </div>
     <!-- Right  Content -->
     <div class="w-[1180px] h-1024 ">
@@ -27,6 +27,11 @@
 import PostsMenu from '../components/left-menu/PostsMenu.vue';
 import GoHome from '../components/GoHome.vue';
 import PostTitle from '../components/PostTitle.vue';
+import users from '../data/users'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const user = users.find((user) => user.id === Number(route.params.id))
 </script>
 
 <style scoped>

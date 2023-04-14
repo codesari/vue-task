@@ -3,7 +3,7 @@
 
     <!-- Left Menu  -->
     <div class="w-260 h-1024">
-      <AlbumsMenu />
+      <AlbumsMenu :user="user"/>
     </div>
     <!-- Right  Content -->
     <div class="w-[1180px] h-1024 ">
@@ -23,6 +23,11 @@
 <script setup>
 import AlbumsMenu from '../components/left-menu/AlbumsMenu.vue';
 import GoHome from '../components/GoHome.vue';
+import users from '../data/users'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const user = users.find((user) => user.id === Number(route.params.id))
 
 </script>
 
