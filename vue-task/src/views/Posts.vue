@@ -9,12 +9,8 @@
     <div class="w-[1180px] h-1024 ">
         <GoHome/>
         <div class="flex flex-col items-start w-[1124px] h-[896px] absolute left-[288px] top-[100px]">
-          <PostTitle/>
-          <PostTitle/>
-          <PostTitle/>
-          <PostTitle/>
-          <PostTitle/>
-         
+          <PostTitle v-for="post in posts" :post="post" :key="post.id"/>
+
         </div>
 
 
@@ -32,6 +28,9 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const user = users.find((user) => user.id === Number(route.params.id))
+
+const posts = user.posts
+console.log(posts);
 </script>
 
 <style scoped>

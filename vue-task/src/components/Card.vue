@@ -1,7 +1,7 @@
 <template>
     <!-- Card  -->
     <!-- navigate yap -->
-    <div @click="goDetail" class="cursor-pointer flex items-start py-[20px] px-[24px] gap-[10px] w-358 h-370 bg-white border border-solid border-border rounded-xl  hover:shadow-spec">
+    <div @click="goDetail" class="flex items-start py-[20px] px-[24px] gap-[10px] w-358 h-370 bg-white border border-solid border-border rounded-xl  cursor-pointer hover:shadow-spec">
         <div class="flex flex-col items-start gap-8 w-310 h-330">
             <div class="relative w-310 h-100">
                 <div class="relative w-100 h-100 bg-white rounded-full overflow-hidden">

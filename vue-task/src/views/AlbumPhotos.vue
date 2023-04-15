@@ -7,9 +7,11 @@
     </div>
     <!-- Right  Content -->
     <div class="w-[1180px] h-1024 ">
-        <GoHome/>
+        <GoHistory>
+            <template #title>Go Albums</template>
+        </GoHistory>
         <div class="flex flex-wrap gap-5 items-start w-[1124px] max-h-[896px] absolute left-[288px] top-[100px]">
-          <AlbumCard v-for="album in albums" :key="album.id" :album="album" :user="user" />
+          <img v-for="photo in photos" :src="photo.url" alt="picture" class="w-60 h-60 object-cover">
           
         </div>
         
@@ -22,15 +24,26 @@
 
 <script setup>
 import AlbumsMenu from '../components/left-menu/AlbumsMenu.vue';
-import GoHome from '../components/GoHome.vue';
+import GoHistory from '../components/GoHistory.vue';
 import users from '../data/users'
 import { useRoute } from 'vue-router'
-import AlbumCard from '../components/AlbumCard.vue';
+
 
 const route = useRoute()
 const user = users.find((user) => user.id === Number(route.params.id))
-const albums = user.albums
-console.log(albums);
+
+// const albumId = Number(route.params.albumId);
+
+
+
+const album = user.albums.find((album) => album.id === Number(route.params.albumId));
+const photos = album.photos;
+
+
+
+
+// console.log(photos);
+
 
 </script>
 

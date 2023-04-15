@@ -3,6 +3,7 @@ import HomePage from '../views/HomePage.vue'
 import Todos from '../views/Todos.vue'
 import Posts from '../views/Posts.vue'
 import Albums from '../views/Albums.vue'
+import AlbumPhotos from '../views/AlbumPhotos.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +31,11 @@ const router = createRouter({
       path: '/albums/:id',
       name: 'albums-detail',
       component: Albums
+    },
+    {
+      path: '/albums/:id/album/:albumId/photo',
+      name: 'album-photos',
+      component: AlbumPhotos
     }
   ]
 })
