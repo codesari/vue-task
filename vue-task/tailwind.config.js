@@ -36,6 +36,10 @@ module.exports = {
       },
       boxShadow: {
         spec: '0px 0px 48px rgba(85, 85, 85, 0.25)'
+      },
+      fontFamily: {
+        roboto: ['Roboto','sans-serif'],
+        josefin: ['Josefin Sans', 'sans-serif']
       }
     }
   },

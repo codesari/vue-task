@@ -6,13 +6,13 @@
     <div class="w-260 h-[292px]">
         <div class="flex flex-col items-start gap-5 w-[228px] h-[68px] absolute left-[16px] ">
             <div class="w-[211px] h-[48px]">
-                <div class="w-[159px] h-[48px]">
+                <div class="w-full h-[48px] absolute left-[12px]">
                     <div class="absolute w-[48px] h-[48px] bg-white rounded-full overflow-hidden">
                   <img :src="user.avatar" alt="" class="w-full h-full object-cover">
                 </div>
                 <div class="flex flex-col absolute left-[52px]">
                     <p class="text-title font-medium text-lg leading-7">{{ user.name }}</p>
-                    <p class=" text-subtitle font-light text-sm leading-[14px] underline ">{{ user.email }} </p>
+                    <p class="text-subtitle font-josefin font-light text-sm leading-[14px] underline">{{ user.email }} </p>
                 </div>
                 
                 </div>
