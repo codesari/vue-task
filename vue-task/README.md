@@ -1,35 +1,32 @@
-# vue-task
+# Proje Adı: Kullanıcı Detay İzleme Platformu
 
-This template should help get you started developing with Vue 3 in Vite.
+Bu proje, kullanıcılar için bir detay izleme platformu sunmaktadır. Kullanıcıların genel bilgilerinin listelendiği bir ana sayfa mevcut ve her kullanıcının detaylarını görmek için kartlarına tıklayarak detay sayfalarına yönlendirilebilirsiniz. Detay sayfalarında, kullanıcının paylaşımları, albümleri ve görevleri gibi bilgilerini görüntüleyebilirsiniz.
 
-## Recommended IDE Setup
+## Kurulum
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Bu projenin çalışması için bilgisayarınızda [Node.js](https://nodejs.org/) yüklü olması gerekmektedir.
 
-## Customize configuration
+Proje dosyalarını indirdikten sonra, terminal üzerinde proje klasörüne gidin ve aşağıdaki komutları sırasıyla çalıştırın:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```
+# bağımlılıkları yükle
 npm install
+
+# projeyi çalıştır
+npm run serve
 ```
 
-### Compile and Hot-Reload for Development
+Bu adımları tamamladıktan sonra, projeyi tarayıcınızda görüntülemek için terminalde yönlendirilen localhost adresine gidin.
 
-```sh
-npm run dev
-```
+## Kullanım
 
-### Compile and Minify for Production
+Ana sayfada, kullanıcıların kartları listelenir. Kartlara tıklayarak, her kullanıcının detay sayfasına erişebilirsiniz. Detay sayfasında, kullanıcının paylaşımları, albümleri ve görevleri gibi bilgilerini görüntüleyebilirsiniz.
 
-```sh
-npm run build
-```
+## Depolama
 
-### Lint with [ESLint](https://eslint.org/)
+Bu projede, kullanıcı bilgileri Local Storage'a yazılarak kalıcı olarak saklanır. Bu sayede, kullanıcılar tarayıcıyı kapattıklarında bile bilgiler kaybolmaz.
 
-```sh
-npm run lint
-```
+## Kullanılan Kütüphaneler
+
+Bu projede, [Tailwind CSS](https://tailwindcss.com/) kullanılmıştır.
+
