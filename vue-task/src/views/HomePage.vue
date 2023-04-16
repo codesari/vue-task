@@ -31,6 +31,11 @@
 import UsersMenu from '../components/left-menu/UsersMenu.vue';
 import Card from '../components/Card.vue'
 import users from '../data/users'
+
+localStorage.setItem('users', JSON.stringify(users));
+// const usersFromLocalStorage = JSON.parse(localStorage.getItem('users'));
+// console.log(usersFromLocalStorage);
+
 console.log(users);
 </script>
 

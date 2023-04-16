@@ -17,7 +17,7 @@
       <img src="@/assets/icons/arrow-right.svg" alt="" />
     </div>
   </div>
-  <SeeMore v-if="showModal" @close="showModal=false"/>
+  <SeeMore v-if="showModal" @close="showModal=false" :post="post"/>
   
 </template>
 

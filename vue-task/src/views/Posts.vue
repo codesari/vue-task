@@ -9,7 +9,7 @@
     <div class="w-[1180px] h-1024 ">
         <GoHome/>
         <div class="flex flex-col items-start w-[1124px] h-[896px] absolute left-[288px] top-[100px]">
-          <PostTitle v-for="post in posts" :post="post" :key="post.id"/>
+          <PostItem v-for="post in posts" :post="post" :key="post.id"/>
 
         </div>
 
@@ -22,15 +22,21 @@
 <script setup>
 import PostsMenu from '../components/left-menu/PostsMenu.vue';
 import GoHome from '../components/GoHome.vue';
-import PostTitle from '../components/PostTitle.vue';
-import users from '../data/users'
+import PostItem from '../components/PostItem.vue';
 import { useRoute } from 'vue-router'
+
+const users = JSON.parse(localStorage.getItem('users'));
+// console.log(users);
 
 const route = useRoute()
 const user = users.find((user) => user.id === Number(route.params.id))
 
 const posts = user.posts
-console.log(posts);
+// console.log(posts);
+
+
+
+
 </script>
 
 <style scoped>

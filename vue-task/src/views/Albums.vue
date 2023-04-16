@@ -23,11 +23,11 @@
 <script setup>
 import AlbumsMenu from '../components/left-menu/AlbumsMenu.vue';
 import GoHome from '../components/GoHome.vue';
-import users from '../data/users'
 import { useRoute } from 'vue-router'
 import AlbumCard from '../components/AlbumCard.vue';
 
 const route = useRoute()
+const users = JSON.parse(localStorage.getItem('users'));
 const user = users.find((user) => user.id === Number(route.params.id))
 const albums = user.albums
 console.log(albums);
