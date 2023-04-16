@@ -1,5 +1,5 @@
 <template>
-    <div id="todo" class="flex items-center gap-8 w-260 h-10 bg-white border-r border-border">
+    <div id="todo" class="flex items-center gap-8 w-260 h-10 bg-white border-r border-border cursor-pointer">
       <!-- Rectangle -->
       <div id="rect" class=" w-2 h-10 bg-purple-700 rounded-r-lg "></div>
       <!-- Icon and Text -->

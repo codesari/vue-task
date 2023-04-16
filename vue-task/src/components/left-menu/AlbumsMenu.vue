@@ -21,16 +21,16 @@
 
         </div>
         <div class="flex flex-col items-start gap-6 absolute w-[260px] h-[168px] top-[150px]">
-        <ItemDeactive>
-          <template #title><RouterLink :to="{ name: 'todos-detail' }">Todos</RouterLink></template>
+        <ItemDeactive @click="go('todos')">
+          <template #title>Todos</template>
           <template #icon><img src="@/assets/icons/checkup-list.svg" alt="Icon" /></template>
         </ItemDeactive>
-        <ItemDeactive>
-          <template #title><RouterLink :to="{ name: 'posts-detail' }">Posts</RouterLink></template>
+        <ItemDeactive @click="go('posts')">
+          <template #title>Posts</template>
           <template #icon><img src="@/assets/icons/notebook.svg" alt="Icon" /></template>
         </ItemDeactive>
-        <ItemActive>
-          <template #title><RouterLink :to="{ name: 'albums-detail' }">Albums</RouterLink></template>
+        <ItemActive @click="go('albums')">
+          <template #title>Albums</template>
           <template #icon><img src="@/assets/icons/photo-heart.svg" alt="Icon" /></template>
         </ItemActive>
         
@@ -56,10 +56,23 @@
 <script setup>
 import ItemActive from './ItemActive.vue';
 import ItemDeactive from './ItemDeactive.vue';
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const props = defineProps({
   user: {
     type: Object,
     required: true
   }
 })
+const go = (page)=>{
+  if (page==='todos'){
+return router.push({ name: 'todos-detail'  })
+  }
+  else if(page==='posts'){
+return router.push({ name: 'posts-detail'  })
+  }
+  else{
+    return router.push({ name: 'albums-detail'  })
+  }
+}
 </script>

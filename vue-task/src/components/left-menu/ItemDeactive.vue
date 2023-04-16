@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center gap-8 w-260 h-10 border-r border-border">
+    <div class="flex items-center gap-8 w-260 h-10 border-r border-border cursor-pointer">
     
       <div  class="w-2 h-10"></div>
       <!-- Icon and Text -->
