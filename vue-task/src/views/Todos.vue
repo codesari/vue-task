@@ -37,7 +37,7 @@ const users = JSON.parse(localStorage.getItem('users'));
 const route = useRoute()
 const user = users.find((user) => user.id === Number(route.params.id))
 const todos =user.todos
-console.log(user.todos);
+// console.log(user.todos);
 
 function handleCheck(todo) {
     // todo öğesinin "checked" özelliği değiştiriliyor

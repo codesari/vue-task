@@ -4,7 +4,7 @@ const users = [
     name: 'Jane Doe',
     email: 'jane@lorem.com',
     phone: '+90 555 678 12 23',
-    avatar: '/src/assets/images/pretty.png',
+    avatar: '/src/assets/images/female.png',
     location: 'Çamlıca, Timko Sk No:20, 06200 Yenimahalle/Ankara',
     company: 'N2Mobil',
     website: 'www.janedoe.com',

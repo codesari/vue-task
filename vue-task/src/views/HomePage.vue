@@ -36,7 +36,7 @@ localStorage.setItem('users', JSON.stringify(users));
 // const usersFromLocalStorage = JSON.parse(localStorage.getItem('users'));
 // console.log(usersFromLocalStorage);
 
-console.log(users);
+// console.log(users);
 </script>
 
 <style lang="scss" scoped></style>
